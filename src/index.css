@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Dancing+Script&family=Jost:wght@300;400;500&family=Lato:wght@300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-orange: #E8611A;
+  --color-secondary-green: #2E7D32;
+  --color-base-white: #FAF7F2;
+  --color-dark-accent: #1A1008;
+  --color-gold-accent: #C9A84C;
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-subheading: "Jost", sans-serif;
+  --font-body: "Lato", sans-serif;
+  --font-accent: "Dancing Script", cursive;
+
+  --animate-shimmer: shimmer 2s infinite linear;
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-base-white text-dark-accent font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display italic;
+  }
+}
+
+@layer utilities {
+  .frosted-glass {
+    @apply backdrop-blur-md bg-white/70;
+  }
+
+  .text-shadow-premium {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+  }
+}
