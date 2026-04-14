@@ -4,14 +4,14 @@ import { MessageCircle, Plus, Minus } from 'lucide-react';
 import OrderModal from './OrderModal';
 
 const PRODUCTS = [
-  { id: 1, name: "Signature Vera Latte", price: 350, description: "Our house blend with silky steamed milk and a hint of gold.", image: "https://picsum.photos/seed/latte/600/800" },
-  { id: 2, name: "Cold Brew Espresso", price: 400, description: "24-hour slow-steeped concentrate for the ultimate caffeine kick.", image: "https://picsum.photos/seed/coldbrew/600/800" },
-  { id: 3, name: "Caramel Frappuccino", price: 450, description: "Blended ice, rich caramel, and whipped cream perfection.", image: "https://picsum.photos/seed/frappe/600/800" },
-  { id: 4, name: "Matcha Green Tea Latte", price: 380, description: "Premium ceremonial grade matcha whisked to perfection.", image: "https://picsum.photos/seed/matcha/600/800" },
-  { id: 5, name: "Classic Cappuccino", price: 300, description: "Equal parts espresso, steamed milk, and airy foam.", image: "https://picsum.photos/seed/cappuccino/600/800" },
-  { id: 6, name: "Belgian Waffle", price: 550, description: "Crispy outside, fluffy inside, topped with maple and berries.", image: "https://picsum.photos/seed/waffle/600/800" },
-  { id: 7, name: "Vera Club Sandwich", price: 600, description: "Triple-layered classic with grilled chicken and fresh greens.", image: "https://picsum.photos/seed/sandwich/600/800" },
-  { id: 8, name: "Chocolate Lava Cake", price: 500, description: "Warm, gooey center served with a scoop of vanilla bean ice cream.", image: "https://picsum.photos/seed/cake/600/800" },
+  { id: 1, name: "Signature Vera Latte", price: 350, description: "Our house blend with silky steamed milk and a hint of gold.", image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" },
+  { id: 2, name: "Cold Brew Espresso", price: 400, description: "24-hour slow-steeped concentrate for the ultimate caffeine kick.", image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" },
+  { id: 3, name: "Caramel Frappuccino", price: 450, description: "Blended ice, rich caramel, and whipped cream perfection.", image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" },
+  { id: 4, name: "Matcha Green Tea Latte", price: 380, description: "Premium ceremonial grade matcha whisked to perfection.", image: "https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=600&q=80" },
+  { id: 5, name: "Classic Cappuccino", price: 300, description: "Equal parts espresso, steamed milk, and airy foam.", image: "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" },
+  { id: 6, name: "Belgian Waffle", price: 550, description: "Crispy outside, fluffy inside, topped with maple and berries.", image: "https://images.unsplash.com/photo-1562376552-0d160a2f9fa4?auto=format&fit=crop&w=600&q=80" },
+  { id: 7, name: "Vera Club Sandwich", price: 600, description: "Triple-layered classic with grilled chicken and fresh greens.", image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" },
+  { id: 8, name: "Chocolate Lava Cake", price: 500, description: "Warm, gooey center served with a scoop of vanilla bean ice cream.", image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80" },
 ];
 
 interface ProductCardProps {

@@ -63,7 +63,7 @@ export default function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary-orange/20 to-secondary-green/20 mix-blend-overlay z-10"></div>
             <img 
-              src="https://picsum.photos/seed/coffee/1200/1600" 
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" 
               alt="Premium Coffee" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
